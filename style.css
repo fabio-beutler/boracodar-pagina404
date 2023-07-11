@@ -101,6 +101,20 @@ main {
 }
 
 @media screen and (max-width: 1150px) {
+  main {
+    gap: 5rem;
+  }
+  .not-found img {
+    width: 70px;
+    height: auto;
+  }
+  .planet {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 950px) {
   body {
     font-size: 0.875rem;
   }
