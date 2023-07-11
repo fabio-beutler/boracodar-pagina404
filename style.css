@@ -1,0 +1,105 @@
+:root {
+  --gray-01: #d6d6f2;
+  --gray-02: #e2e2f5;
+  --purple: #bf7bfb;
+  --blue-light: #212187;
+  --blue: #151557;
+  --blue-dark: #000013;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Outfit, sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 15rem;
+  padding: 0 2rem;
+}
+
+.message {
+  max-width: 23.75rem;
+}
+
+.message h1 {
+  color: var(--gray-01);
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.message p {
+  margin-top: 1.5rem;
+  color: var(--gray-01);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.buttons {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttons button,
+.buttons a {
+  font-family: Outfit;
+  color: var(--gray-02);
+  text-decoration: none;
+  border: none;
+  background: var(--blue, #151557);
+  border-radius: 62.4375rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.buttons button:hover,
+.buttons a:hover {
+  background-color: var(--blue-light);
+}
+
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    font-size: 89.75%;
+  }
+  .not-found {
+    display: none;
+  }
+}

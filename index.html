@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images/planet.svg" type="image/x-icon" />
+    <title>Página 404</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img
+      class="background"
+      alt=""
+      srcset="
+        assets/images/background.png      930w,
+        assets/images/background-2-x.png 1860w,
+        assets/images/background-3-x.png 2790w
+      "
+      sizes="(max-width: 930px) 930px, (max-width: 1860px) 1860px, 2790px"
+    />
+    <main>
+      <div class="message">
+        <h1>Ops, esta página não foi encontrada</h1>
+        <p>
+          Parece que você se perder... Tente voltar para a página anterior ou acessa a
+          home.
+        </p>
+
+        <div class="buttons">
+          <button type="button" onclick="history.back()">voltar</button>
+          <a href="/">ir para home</a>
+        </div>
+      </div>
+
+      <div class="not-found">
+        <img src="assets/images/four.svg" alt="" />
+        <lottie-player
+          src="assets/lottie-files/planet-lottie.json"
+          background="transparent"
+          speed="0.5"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+        <img src="assets/images/four.svg" alt="" />
+      </div>
+    </main>
+  </body>
+</html>
