@@ -101,9 +101,19 @@ main {
 }
 
 @media screen and (max-width: 1150px) {
+  body {
+    font-size: 0.875rem;
+  }
   main {
     flex-direction: column-reverse;
     gap: 5rem;
+  }
+  .message h1,
+  .message p {
+    text-align: center;
+  }
+  .buttons {
+    justify-content: center;
   }
   .not-found img {
     width: 50px;
